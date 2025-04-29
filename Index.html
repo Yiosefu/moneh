@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPCMC</title>
+  <link rel="stylesheet" href="webpages/asset/styles.css">
+  <link rel="icon" href="webpages/src/logo.jpg" type="image/jpeg">
+  <script src="webpages/asset/action.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/css/icofont.min.css" rel="stylesheet">
+  
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="src/logo.jpg" alt="Logo" class="logo-icon">
+    <span class="brand"><span class="green">SPCMC</span> </span>
+  </div>
+
+  <!-- Sidebar Toggle Button -->
+  <button class="btn-open" onclick="toggleSidebar()">☰ Menu</button>
+
+  <!-- Sidebar Nav -->
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <h5 style="color:#006400">SPCMC Menu</h5>
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+    </div>
+    <hr>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="webpages/Index.html">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#servicesCollapse">Services <span class="plus"> + </span></a>
+        <div class="collapse" id="servicesCollapse">
+          <ul class="list-unstyled ps-3">
+            <li><a class="text-muted" href="#">General Checkup</a></li>
+            <li><a class="text-muted" href="#">Diagnostics</a></li>
+            <li><a class="text-muted" href="#">Emergency</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link btn btn-success text-white mt-2" href="webpages/appointment.html">Book Appointment</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Slider Section -->
+<div class="slider-container">
+  <div class="single-slider active" style="background-image: url('src/slider/mainpage.jpg');">
+    <div class="slider-wrapper">
+      <div class="text">
+        <h1 class="h6 text-secondary">We provide,</h1>
+        <h1>Comprehensive <span>Healthcare Solutions</span></h1>
+        <p>Experience the best in medical care, tailored to meet your individual needs. We are committed to your well-being.</p>
+        <div class="button">
+          <a class="btn" href="webpages/appointment.html">Get Appointment</a>
+          <a class="btn primary" href="webpages/learn-more.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="single-slider" style="background-image: url('src/slider/slider1.jpg');">
+    <div class="slider-wrapper">
+      <div class="text">
+        <h1 class="h6 text-secondary">Discover care,</h1>
+        <h1>With Compassion <span>and Excellence</span></h1>
+        <p>Your health is our top priority. Get the treatment you deserve from professionals who care.</p>
+        <div class="button">
+          <a class="btn" href="webpages/appointment.html">Get Appointment</a>
+          <a class="btn primary" href="webpages/learn-more.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="single-slider" style="background-image: url('src/slider/slider3.png');">
+    <div class="slider-wrapper">
+      <div class="text">
+        <h1 class="h6 text-secondary">Discover care,</h1>
+        <h1>Expert <span>Medical Care</span></h1>
+        <p>Our team of specialists is dedicated to providing the highest quality care with compassion and expertise.</p>
+        <div class="button">
+          <a class="btn" href="webpages/appointment.html">Get Appointment</a>
+          <a class="btn primary" href="webpages/learn-more.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<section class="Feautes">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="section-title text-center">
+                  <h2>We Are Always Ready to Help You & Your Family</h2>
+                  <img src="src/logo.jpg" alt="Healthcare" class="img-fluid mb-4">
+                  <p>Our team is dedicated to providing exceptional care and support for you and your family. From emergency assistance to comprehensive pharmacy services, we're here to ensure your health and well-being are always our top priority.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-12">
+              <div class="single-features">
+                  <div class="signle-icon">
+                      <i class="icofont icofont-ambulance-cross"></i>
+                  </div>
+                  <h3>Emergency Help</h3>
+                  <p>Immediate assistance for urgent medical situations to ensure fast and effective care.</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-12">
+              <div class="single-features">
+                  <div class="signle-icon">
+                      <i class="icofont icofont-medical-sign-alt"></i>
+                  </div>
+                  <h3>Enriched Pharmacy</h3>
+                  <p>Comprehensive pharmacy services with a wide range of medications and health products.</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-12">
+              <div class="last single-features">
+                  <div class="signle-icon">
+                      <i class="icofont icofont-stethoscope"></i>
+                  </div>
+                  <h3>Medical Treatment</h3>
+                  <p>Professional medical treatment provided by experienced healthcare professionals.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- JS Script -->
+<script>
+  function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const btnOpen = document.getElementsByClassName('btn-open')[0];
+
+  sidebar.classList.toggle('active');
+
+  // Check if sidebar is active
+  if (sidebar.classList.contains('active')) {
+    btnOpen.style.visibility = 'hidden'; // Hide the button when sidebar is active
+  } else {
+    btnOpen.style.visibility = 'visible'; // Show the button when sidebar is closed
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
